@@ -1,0 +1,8 @@
+<?php
+class AttackPokemon
+{
+    private $attackMinimal;
+    private $attackMaximal;
+    private $specialAttack;
+    private $probabilitySpecialAttack;
+}
