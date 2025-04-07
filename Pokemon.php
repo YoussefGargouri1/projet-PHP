@@ -225,9 +225,9 @@
         }
 
         if ($Pokemon1->isDead()) {
-            echo "<div class='winner'>" . $Pokemon2->getName() . " gagne !</div>";
+            echo "<div class='winner'>" . $Pokemon2->getName() . "<img src='" . $Pokemon2->getUrl() . "'><br>" . " gagne !</div>";
         } elseif ($Pokemon2->isDead()) {
-            echo "<div class='winner'>" . $Pokemon1->getName() . " gagne !</div>";
+            echo "<div class='winner'>" . $Pokemon1->getName() . "<img src='" . $Pokemon1->getUrl() . "'><br> gagne !</div>";
         }
     }
 
