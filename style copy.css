@@ -1,0 +1,87 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.navbar {
+    background-color: #2c3e50;
+    padding: 15px 20px;
+    color: white;
+    display: flex;
+    /*justify-content: space-between;*/
+    align-items: center;
+}
+
+.brand {
+    
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    margin-left: 20PX;
+    font-size: 14px;
+}
+
+.nav-links a:hover {
+    text-decoration: underline;
+}
+
+.welcome {
+    text-align: center;
+    margin-top: 100px;
+    animation: fadeOut 3s forwards;
+
+}
+@keyframes fadeOut {
+    0% {
+        opacity: 1;
+    }
+    60% { 
+        opacity: 1; 
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+.welcome h1 {
+    margin: 10px 0;
+    font-size: 32px;
+    color: #333;
+}
+
+.enter {
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 20px;
+    border: 2px solid #2c3e50;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    font-family: Arial, sans-serif;
+}
+
+.enter p {
+    font-size: 16px;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.enter input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    font-size: 15px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    box-sizing: border-box;
+    outline: none;
+    transition: border-color 0.3s;
+}
+
+.enter input[type="text"]:focus {
+    border-color: #2c3e50;
+}
+
