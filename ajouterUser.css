@@ -1,0 +1,82 @@
+ /* Resetting some basic styles for consistency */
+ body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f9;
+    height: 100%;
+}
+
+/* Centering the form on the page */
+.auth-form {
+    width: 100%;
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.auth-form h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+label {
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 6px;
+    display: block;
+}
+
+input[type="text"], input[type="email"], select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+    box-sizing: border-box;
+
+}
+
+input[type="text"]:focus, input[type="email"]:focus, select:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+button[type="submit"] {
+    width: 100%;
+    padding: 12px;
+    background-color: #007bff;
+    color: white;
+    font-size: 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+
+}
+
+button[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+
+
+.message {
+    text-align: center;
+    font-weight: bold;
+}
+
+/* Error message */
+.error {
+    color: red;
+    
+}
+
+/* Success message */
+.success {
+    color: green;
+}

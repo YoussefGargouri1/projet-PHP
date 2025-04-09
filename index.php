@@ -28,26 +28,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         }
     }   
 
-
-    if (isset($_POST['add_user'])) {
-    $username = trim($_POST['new_username']);
-    $email = trim($_POST['email']);
-    $role = $_POST['role'];
-
-    $existing = $userRepo->findByUsername($username);
-    if ($existing) {
-        $error = "Ce nom d'utilisateur existe déjà.";
-    } else {
-        $data = [
-            'username' => $username,
-            'email' => $email,
-            'role' => $role
-        ];
-        $userRepo->create($data);
-        $message = "Utilisateur ajouté avec succès.";
-    }
-}   
-
 }
 
 ?>
@@ -93,26 +73,9 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         <input type="text" name="username" required>
         <button type="submit" name='login'>Se connecter</button>
     </form>
+    <br>
+    <a href="ajouterUser.php">Ajouter un nouvel utilisateur</a>
     </div>
-
-
-    <h3>Ajouter un nouvel utilisateur</h3>
-    <form method="POST" class="auth-form">
-        <label>Nom d'utilisateur :</label>
-        <input type="text" name="new_username" required>
-
-        <label>Email :</label>
-        <input type="email" name="email" required>
-
-        <label>Rôle :</label>
-        <select name="role" required>
-            <option value="user">User</option>
-            <option value="administrateur">administrateur</option>
-        </select>
-
-        <button type="submit" name="add_user">Ajouter</button>
-    </form>
-
 
 </body>
 </html>
