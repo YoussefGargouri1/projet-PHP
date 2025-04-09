@@ -30,6 +30,7 @@ if (!isset($_SESSION['user'])) {
             <a href="ajouterEtudiant.php">
                 <button type="button">Ajouter un étudiant</button>
             </a>
+            
         </div>
     <?php endif; ?>
 
@@ -81,7 +82,7 @@ foreach ($etudiants as $etudiant) {
     echo "<td>" . htmlspecialchars($etudiant['id']) . "</td>";
     echo "<td><img src='" . htmlspecialchars($etudiant['image']) . "' alt='Student Image' width='100px'></td>";
     echo "<td>" . htmlspecialchars($etudiant['name']) . "</td>";
-    echo "<td>" . htmlspecialchars($etudiant['section_id']) . "</td>";
+    echo "<td>" . htmlspecialchars($etudiant['section_name']) . "</td>";
     echo "<td>" . htmlspecialchars($etudiant['birthday']) . "</td>";
     echo "<td><a href='detailEtudiant.php?id=" . urlencode($etudiant['id']) . "'><img src='info (1).png' alt='Info Image' width = 20px style='cursor: pointer;'></a></td>";
     if ($_SESSION['user']['role'] === 'administrateur'):

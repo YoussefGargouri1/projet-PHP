@@ -1,0 +1,68 @@
+/* Basic container for the page */
+.container {
+    width: 80%;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+}
+
+/* Title styling */
+.section-title {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* List of students */
+.student-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.student-item {
+    background-color: #ffffff;
+    padding: 12px;
+    margin: 8px 0;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 18px;
+    color: #333;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Hover effect for student items */
+.student-item:hover {
+    background-color: #f1f1f1;
+}
+
+/* No students message */
+.no-students {
+    font-size: 16px;
+    font-style: italic;
+    color: #888;
+    text-align: center;
+}
+
+/* Error message */
+.error-message {
+    font-size: 18px;
+    color: red;
+    font-weight: bold;
+    text-align: center;
+}
+
+/* Basic styling for links */
+a {
+    color: #007BFF;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: #0056b3;
+}

@@ -4,7 +4,7 @@ class Database{
     private $host = 'localhost';
     private $db_name = 'systemeGestion';
     private $username = 'root';
-    private $password = '';
+    private $password = 'Mytech6624';
     public $connection;
     
     

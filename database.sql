@@ -11,9 +11,10 @@ CREATE TABLE user (
 
 
 CREATE TABLE section (
-    id INT AUTO_INCREMENT PRIMARY KEY,
+    id INT AUTO_INCREMENT ,
     designation VARCHAR(100) NOT NULL,
-    description VARCHAR(500)
+    description VARCHAR(500),
+    
 );
 
 
@@ -42,5 +43,3 @@ INSERT INTO etudiant (name, birthday, image, section_id) VALUES
 ('Firas Guizani', '2004-12-25', 'firas222.jpg', 1),
 ('Youssef Gargouri', '2005-02-21', 'PHOTO_ysf1.jpg', 1),
 ('Aziz Kchaou', '2005-01-20', 'aziz.jpg', 1);
-
-

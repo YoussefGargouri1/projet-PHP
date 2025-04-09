@@ -61,6 +61,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                     <option value="<?= $section['id'] ?>"><?= htmlspecialchars($section['designation']) ?></option>
                 <?php endforeach; ?>
             </select><br><br>
+            
+            
 
             <button type="submit">Ajouter</button>
         </form>
